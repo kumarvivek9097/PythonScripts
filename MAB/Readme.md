@@ -13,7 +13,7 @@ So this script will give answer to two problems:
  -  `Extra Amount to Add`
 
 ## Libraries 
-Following libraries are used in this project:
+Following libraries are used in this script:
 
 - numpy
 - math
