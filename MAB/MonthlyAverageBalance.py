@@ -16,8 +16,7 @@ month=today.month # Today's month
 year=today.year # Today's year
 no_of_days=calendar.monthrange(year,month)[1] # Number of days in today's month
 
-mab=10000 # Monthly average balance required to maintain
-current_mab=float(input("Enter your current Monthly Average Balance: ")) # Current MAB
+mab=float(input("Enter the Monthly Average Balance required to maintain: ")) # Monthly average balance required to maintaincurrent_mab=float(input("Enter your current Monthly Average Balance: ")) # Current MAB
 current_bal=float(input("Enter your current Balance: ")) # Current balance
 
 total_bal_req=mab*no_of_days # Total balance required to maintained (Sum of amount in account at EOD throughout the month)
