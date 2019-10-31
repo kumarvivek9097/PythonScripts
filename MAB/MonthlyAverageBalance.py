@@ -16,12 +16,13 @@ month=today.month # Today's month
 year=today.year # Today's year
 no_of_days=calendar.monthrange(year,month)[1] # Number of days in today's month
 
-mab=float(input("Enter the Monthly Average Balance required to maintain: ")) # Monthly average balance required to maintaincurrent_mab=float(input("Enter your current Monthly Average Balance: ")) # Current MAB
+mab=float(input("Enter the Monthly Average Balance required to maintain: ")) # Monthly average balance required to maintaincurrent_mab=float(input("Enter your current Monthly Average Balance: "))
+current_mab=float(input("Enter your current Monthly Average Balance: ")) # Current MAB
 current_bal=float(input("Enter your current Balance: ")) # Current balance
 
 total_bal_req=mab*no_of_days # Total balance required to maintained (Sum of amount in account at EOD throughout the month)
 total_maintained=current_mab*day # Total balance maintained till now (Sum of amount in account at EOD till now)
-avg_to_maintain=(total_bal_req-total_maintained)/(no_of_days-day) # Average balance require to maintain to complate MAB
+avg_to_maintain=(total_bal_req-total_maintained)/(no_of_days-day+1) # Average balance require to maintain to complate MAB
 
 # print("Average balance need to maintain for Minimum Average Balance is: ",avg_to_maintain)
 print("Average balance need to maintain for Minimum Average Balance is: ","%.2f" % round(avg_to_maintain,2))
